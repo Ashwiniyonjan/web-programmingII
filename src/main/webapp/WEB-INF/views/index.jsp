@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <title>ASHH Clothing</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="favicon.png" />
@@ -18,78 +19,29 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-  </head>
-
-  <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            background-color: #f0f2f5;
-            color: #333;
-        }
-        .card {
-            background: #fff;
-            padding: 40px 50px;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-            text-align: center;
-            max-width: 500px;
-        }
-        h1 {
-            color: #2e7d32;
-            margin-bottom: 10px;
-        }
-        p.greeting {
-            font-size: 1.4rem;
-            color: #555;
-            margin: 20px 0;
-        }
-        .info {
-            font-size: 0.9rem;
-            color: #888;
-            margin-top: 20px;
-            line-height: 1.6;
-        }
-        a {
-            color: #2e7d32;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        background-color: #f0f2f5;
+        color: #333;
+      }
+      .ashh-title span {
+        color: #2e7d32;
+      }
     </style>
-</head>
-<body>
-    <div class="card">
-        <h1>Spring MVC Hello World</h1>
-
-        <!-- Display the greeting from the Model -->
-        <p class="greeting">${greeting}</p>
-
-        <p class="info">
-            Try: <a href="${pageContext.request.contextPath}/hello?name=Abiral">/hello?name=Abiral</a>
-        </p>
-    </div>
-</body>
-</html>
-
-
+  </head>
   <body>
+    <!-- Sticky Header & Navbar -->
     <div class="sticky-top bg-white">
-      <!-- Header -->
       <header class="text-center bg-white pt-4 pb-3 border-bottom">
         <h1 class="ashh-title">ASHH <span>Clothing</span></h1>
         <p class="ashh-subtitle">Your Everyday Fashion Destination</p>
       </header>
 
-      <!-- Navigation Bar -->
       <nav class="navbar navbar-expand-lg bg-white py-3 shadow-sm">
         <div class="container-fluid">
-          <!-- Logo -->
+          <!-- Logo (small screens) -->
           <a class="navbar-brand d-lg-none" href="#">ASHH</a>
 
           <!-- Hamburger -->
@@ -106,7 +58,7 @@
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <!-- Search (Left - Flex Grow to balance) -->
+            <!-- Search (left) -->
             <div class="d-flex flex-grow-1" style="flex-basis: 0">
               <form class="d-flex w-100 mt-3 mb-2 mt-lg-0 mb-lg-0 nav-left">
                 <div class="input-group search-container">
@@ -142,11 +94,10 @@
               </form>
             </div>
 
-            <!-- Links (Center) -->
+            <!-- Center links -->
             <ul
               class="navbar-nav mx-auto mb-2 mb-xl-0 nav-center gap-3 justify-content-center"
             >
-              <!-- Bottoms -->
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -154,9 +105,8 @@
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
+                  >Bottoms</a
                 >
-                  Bottoms
-                </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="jeans.html">Jeans</a></li>
                   <li>
@@ -164,8 +114,6 @@
                   </li>
                 </ul>
               </li>
-
-              <!-- Tops -->
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -173,9 +121,8 @@
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
+                  >Tops</a
                 >
-                  Tops
-                </a>
                 <ul class="dropdown-menu">
                   <li>
                     <a class="dropdown-item" href="tshirts.html">T-Shirts</a>
@@ -185,8 +132,6 @@
                   </li>
                 </ul>
               </li>
-
-              <!-- Casual -->
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -194,9 +139,8 @@
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
+                  >Casual</a
                 >
-                  Casual
-                </a>
                 <ul class="dropdown-menu">
                   <li>
                     <a class="dropdown-item" href="dailywear.html"
@@ -210,8 +154,6 @@
                   </li>
                 </ul>
               </li>
-
-              <!-- Party -->
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -219,9 +161,8 @@
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
+                  >Party</a
                 >
-                  Party
-                </a>
                 <ul class="dropdown-menu">
                   <li>
                     <a class="dropdown-item" href="dresses.html">Dresses</a>
@@ -231,21 +172,23 @@
               </li>
             </ul>
 
-            <!-- Right: Login/Cart (Flex Grow to balance) -->
+            <!-- Right: Register/Login & Cart -->
             <div
               class="nav-right d-flex gap-3 align-items-center justify-content-center justify-content-lg-end mt-2 mt-lg-0 flex-grow-1"
               style="flex-basis: 0"
             >
-              <a href="login.html" class="btn btn-outline-primary">
-                <i class="fa-solid fa-user me-1"></i> Account
+              <a
+                href="${pageContext.request.contextPath}/user/register"
+                class="btn btn-outline-primary"
+              >
+                <i class="fa-solid fa-user me-1"></i> Register / Login
               </a>
-              <a href="checkout.html" class="btn btn-primary position-relative">
+              <a href="#" class="btn btn-primary position-relative">
                 <i class="fa-solid fa-cart-shopping"></i>
                 <span
                   class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
                   style="font-size: 0.6em"
-                >
-                  0
+                  >0
                   <span class="visually-hidden">unread messages</span>
                 </span>
               </a>
@@ -274,7 +217,7 @@
             );
           "
         >
-          <div class="text-white hero-content">
+          <div class="text-white hero-content text-center">
             <h1
               class="hero-heading fw-bold mb-3"
               style="

@@ -45,7 +45,7 @@ public class HelloController {
      */
     @GetMapping("/")
     public String home() {
-        return "redirect:/hello";
+        return "redirect:/home";
     }
 
     /**
