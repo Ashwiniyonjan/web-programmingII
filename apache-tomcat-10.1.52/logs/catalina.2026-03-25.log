@@ -1,0 +1,332 @@
+25-Mar-2026 08:38:37.740 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.52
+25-Mar-2026 08:38:37.748 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 23 2026 19:29:07 UTC
+25-Mar-2026 08:38:37.750 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.52.0
+25-Mar-2026 08:38:37.750 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+25-Mar-2026 08:38:37.751 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+25-Mar-2026 08:38:37.751 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+25-Mar-2026 08:38:37.752 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-25.0.2
+25-Mar-2026 08:38:37.754 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           25.0.2+10-LTS-69
+25-Mar-2026 08:38:37.755 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+25-Mar-2026 08:38:37.757 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52
+25-Mar-2026 08:38:37.758 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52
+25-Mar-2026 08:38:37.795 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\conf\logging.properties
+25-Mar-2026 08:38:37.796 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+25-Mar-2026 08:38:37.797 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+25-Mar-2026 08:38:37.798 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+25-Mar-2026 08:38:37.798 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+25-Mar-2026 08:38:37.800 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+25-Mar-2026 08:38:37.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+25-Mar-2026 08:38:37.801 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+25-Mar-2026 08:38:37.802 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+25-Mar-2026 08:38:37.802 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+25-Mar-2026 08:38:37.802 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+25-Mar-2026 08:38:37.803 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52
+25-Mar-2026 08:38:37.803 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52
+25-Mar-2026 08:38:37.805 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\temp
+25-Mar-2026 08:38:37.833 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-25.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Python314\Scripts\;C:\Python314\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;D:\bin;D:\Git\cmd;D:\NodeJS\;C:\ProgramData\chocolatey\bin;C:\Program Files\apache-maven-3.9.14\bin;C:\Users\ashwi\AppData\Local\Microsoft\WindowsApps;C:\Users\ashwi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Azure Data Studio\bin;C:\MinGW\bin;C:\Users\ashwi\AppData\Roaming\npm;C:\Users\ashwi\AppData\Local\Android\Sdk\platform-tools;C:\Users\ashwi\AppData\Local\Programs\Antigravity\bin;.]
+25-Mar-2026 08:38:38.658 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+25-Mar-2026 08:38:38.731 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1550] milliseconds
+25-Mar-2026 08:38:38.902 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+25-Mar-2026 08:38:38.903 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.52]
+25-Mar-2026 08:38:39.003 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld.war]
+25-Mar-2026 08:38:39.076 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld] was found with a last modified time that did not match the associated WAR. It will be deleted.
+25-Mar-2026 08:38:39.085 SEVERE [main] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld\css] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:38:39.101 SEVERE [main] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld\META-INF\maven\com.example\SpringMvcHelloWorld] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:38:39.103 SEVERE [main] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld\META-INF\maven\com.example] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:38:39.105 SEVERE [main] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld\META-INF\maven] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:38:39.110 SEVERE [main] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld\META-INF] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:38:39.124 SEVERE [main] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld\WEB-INF\classes\com\example\controller] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:38:39.134 SEVERE [main] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld\WEB-INF\classes\com\example\model] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:38:39.144 SEVERE [main] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld\WEB-INF\classes\com\example\service] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:38:39.147 SEVERE [main] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld\WEB-INF\classes\com\example] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:38:39.148 SEVERE [main] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld\WEB-INF\classes\com] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:38:39.150 SEVERE [main] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld\WEB-INF\classes] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:38:39.198 SEVERE [main] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld\WEB-INF\lib] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:38:39.221 SEVERE [main] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld\WEB-INF\views] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:38:39.227 SEVERE [main] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld\WEB-INF] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:38:39.229 SEVERE [main] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:38:39.232 SEVERE [main] org.apache.catalina.startup.ExpandWar.delete [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:38:39.233 SEVERE [main] org.apache.catalina.startup.ContextConfig.beforeStart Exception fixing docBase for context [/SpringMvcHelloWorld]
+	java.io.IOException: [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld] could not be completely deleted. The presence of the remaining files may cause problems
+		at org.apache.catalina.startup.ExpandWar.expand(ExpandWar.java:101)
+		at org.apache.catalina.startup.ContextConfig.fixDocBase(ContextConfig.java:811)
+		at org.apache.catalina.startup.ContextConfig.beforeStart(ContextConfig.java:947)
+		at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:290)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:389)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:163)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:597)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:569)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:665)
+		at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:962)
+		at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1900)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:125)
+		at org.apache.catalina.startup.HostConfig.deployWARs(HostConfig.java:766)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:417)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1618)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:300)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:389)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:336)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:774)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:783)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1201)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1191)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:149)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:747)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:201)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:410)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:868)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:758)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+25-Mar-2026 08:40:35.172 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+25-Mar-2026 08:40:40.965 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Initializing Servlet 'dispatcher'
+25-Mar-2026 08:41:13.919 INFO [main] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 8.0.1.Final
+25-Mar-2026 08:41:44.398 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Completed initialization in 63430 ms
+25-Mar-2026 08:41:44.459 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld.war] has finished in [185,445] ms
+25-Mar-2026 08:41:44.469 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\docs]
+25-Mar-2026 08:41:44.742 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\docs] has finished in [273] ms
+25-Mar-2026 08:41:44.744 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\examples]
+25-Mar-2026 08:41:47.626 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\examples] has finished in [2,880] ms
+25-Mar-2026 08:41:47.636 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\host-manager]
+25-Mar-2026 08:41:47.947 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\host-manager] has finished in [311] ms
+25-Mar-2026 08:41:47.947 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\manager]
+25-Mar-2026 08:41:48.146 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\manager] has finished in [199] ms
+25-Mar-2026 08:41:48.146 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\ROOT]
+25-Mar-2026 08:41:48.275 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\ROOT] has finished in [129] ms
+25-Mar-2026 08:41:48.299 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+25-Mar-2026 08:41:48.379 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [189647] milliseconds
+25-Mar-2026 08:44:48.832 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/SpringMvcHelloWorld]
+25-Mar-2026 08:44:48.918 SEVERE [Catalina-utility-1] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\work\Catalina\localhost\SpringMvcHelloWorld\org\apache\jsp\WEB_002dINF\views] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:44:48.918 SEVERE [Catalina-utility-1] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\work\Catalina\localhost\SpringMvcHelloWorld\org\apache\jsp\WEB_002dINF] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:44:48.922 SEVERE [Catalina-utility-1] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\work\Catalina\localhost\SpringMvcHelloWorld\org\apache\jsp] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:44:48.925 SEVERE [Catalina-utility-1] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\work\Catalina\localhost\SpringMvcHelloWorld\org\apache] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:44:48.927 SEVERE [Catalina-utility-1] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\work\Catalina\localhost\SpringMvcHelloWorld\org] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:44:48.927 SEVERE [Catalina-utility-1] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\work\Catalina\localhost\SpringMvcHelloWorld] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:44:48.927 SEVERE [Catalina-utility-1] org.apache.catalina.startup.ExpandWar.delete [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\work\Catalina\localhost\SpringMvcHelloWorld] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:44:48.937 SEVERE [Catalina-utility-1] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld\css] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:44:48.947 SEVERE [Catalina-utility-1] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld\META-INF\maven\com.example\SpringMvcHelloWorld] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:44:48.947 SEVERE [Catalina-utility-1] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld\META-INF\maven\com.example] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:44:48.947 SEVERE [Catalina-utility-1] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld\META-INF\maven] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:44:48.947 SEVERE [Catalina-utility-1] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld\META-INF] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:44:48.962 SEVERE [Catalina-utility-1] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld\WEB-INF\classes\com\example\controller] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:44:48.962 SEVERE [Catalina-utility-1] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld\WEB-INF\classes\com\example\model] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:44:48.969 SEVERE [Catalina-utility-1] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld\WEB-INF\classes\com\example\service] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:44:48.969 SEVERE [Catalina-utility-1] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld\WEB-INF\classes\com\example] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:44:48.976 SEVERE [Catalina-utility-1] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld\WEB-INF\classes\com] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:44:48.978 SEVERE [Catalina-utility-1] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld\WEB-INF\classes] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:44:48.978 SEVERE [Catalina-utility-1] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld\WEB-INF\lib] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:44:48.981 SEVERE [Catalina-utility-1] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld\WEB-INF\views] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:44:48.981 SEVERE [Catalina-utility-1] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld\WEB-INF] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:44:48.985 SEVERE [Catalina-utility-1] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:44:48.985 SEVERE [Catalina-utility-1] org.apache.catalina.startup.ExpandWar.delete [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:44:49.004 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld.war]
+25-Mar-2026 08:44:49.183 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld.war] has finished in [179] ms
+25-Mar-2026 08:45:25.990 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.52
+25-Mar-2026 08:45:25.999 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 23 2026 19:29:07 UTC
+25-Mar-2026 08:45:26.000 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.52.0
+25-Mar-2026 08:45:26.001 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+25-Mar-2026 08:45:26.003 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+25-Mar-2026 08:45:26.004 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+25-Mar-2026 08:45:26.005 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-25.0.2
+25-Mar-2026 08:45:26.007 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           25.0.2+10-LTS-69
+25-Mar-2026 08:45:26.008 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+25-Mar-2026 08:45:26.009 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52
+25-Mar-2026 08:45:26.010 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52
+25-Mar-2026 08:45:26.060 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\conf\logging.properties
+25-Mar-2026 08:45:26.062 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+25-Mar-2026 08:45:26.063 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+25-Mar-2026 08:45:26.065 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+25-Mar-2026 08:45:26.065 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+25-Mar-2026 08:45:26.067 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+25-Mar-2026 08:45:26.067 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+25-Mar-2026 08:45:26.068 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+25-Mar-2026 08:45:26.069 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+25-Mar-2026 08:45:26.069 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+25-Mar-2026 08:45:26.071 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+25-Mar-2026 08:45:26.072 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52
+25-Mar-2026 08:45:26.072 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52
+25-Mar-2026 08:45:26.073 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\temp
+25-Mar-2026 08:45:26.101 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-25.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Python314\Scripts\;C:\Python314\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;D:\bin;D:\Git\cmd;D:\NodeJS\;C:\ProgramData\chocolatey\bin;C:\Program Files\apache-maven-3.9.14\bin;C:\Users\ashwi\AppData\Local\Microsoft\WindowsApps;C:\Users\ashwi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Azure Data Studio\bin;C:\MinGW\bin;C:\Users\ashwi\AppData\Roaming\npm;C:\Users\ashwi\AppData\Local\Android\Sdk\platform-tools;C:\Users\ashwi\AppData\Local\Programs\Antigravity\bin;.]
+25-Mar-2026 08:45:26.834 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+25-Mar-2026 08:45:26.883 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector["http-nio-8080"]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1084)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:520)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:955)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:709)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:732)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:299)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:472)
+	Caused by: java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:522)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:335)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:297)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:264)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:219)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1431)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1444)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:633)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:82)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1082)
+		... 11 more
+25-Mar-2026 08:45:26.886 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1460] milliseconds
+25-Mar-2026 08:45:27.025 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+25-Mar-2026 08:45:27.026 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.52]
+25-Mar-2026 08:45:27.125 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld.war]
+25-Mar-2026 08:45:28.334 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld.war] has finished in [1,184] ms
+25-Mar-2026 08:45:28.346 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\docs]
+25-Mar-2026 08:45:28.999 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\docs] has finished in [653] ms
+25-Mar-2026 08:45:29.004 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\examples]
+25-Mar-2026 08:45:31.869 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\examples] has finished in [2,866] ms
+25-Mar-2026 08:45:31.869 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\host-manager]
+25-Mar-2026 08:45:32.087 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\host-manager] has finished in [210] ms
+25-Mar-2026 08:45:32.087 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\manager]
+25-Mar-2026 08:45:32.304 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\manager] has finished in [217] ms
+25-Mar-2026 08:45:32.306 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\ROOT]
+25-Mar-2026 08:45:32.445 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\ROOT] has finished in [139] ms
+25-Mar-2026 08:45:32.472 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [5580] milliseconds
+25-Mar-2026 08:45:32.496 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:522)
+		at java.base/sun.nio.ch.Net.bind(Net.java:511)
+		at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:641)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:326)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:222)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:531)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:848)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:796)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+25-Mar-2026 08:45:32.501 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+25-Mar-2026 08:45:32.503 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+25-Mar-2026 08:45:32.575 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+25-Mar-2026 08:45:32.580 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+25-Mar-2026 08:47:00.067 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/SpringMvcHelloWorld]
+25-Mar-2026 08:47:00.091 SEVERE [Catalina-utility-2] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\work\Catalina\localhost\SpringMvcHelloWorld\org\apache\jsp\WEB_002dINF\views] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:47:00.091 SEVERE [Catalina-utility-2] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\work\Catalina\localhost\SpringMvcHelloWorld\org\apache\jsp\WEB_002dINF] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:47:00.103 SEVERE [Catalina-utility-2] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\work\Catalina\localhost\SpringMvcHelloWorld\org\apache\jsp] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:47:00.105 SEVERE [Catalina-utility-2] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\work\Catalina\localhost\SpringMvcHelloWorld\org\apache] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:47:00.110 SEVERE [Catalina-utility-2] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\work\Catalina\localhost\SpringMvcHelloWorld\org] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:47:00.112 SEVERE [Catalina-utility-2] org.apache.catalina.startup.ExpandWar.deleteDir [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\work\Catalina\localhost\SpringMvcHelloWorld] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:47:00.112 SEVERE [Catalina-utility-2] org.apache.catalina.startup.ExpandWar.delete [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\work\Catalina\localhost\SpringMvcHelloWorld] could not be completely deleted. The presence of the remaining files may cause problems
+25-Mar-2026 08:47:30.237 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld.war]
+25-Mar-2026 08:47:40.306 INFO [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+25-Mar-2026 08:47:41.098 INFO [Catalina-utility-1] org.springframework.web.servlet.FrameworkServlet.initServletBean Initializing Servlet 'dispatcher'
+25-Mar-2026 08:47:45.404 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.52
+25-Mar-2026 08:47:45.413 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 23 2026 19:29:07 UTC
+25-Mar-2026 08:47:45.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.52.0
+25-Mar-2026 08:47:45.415 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+25-Mar-2026 08:47:45.415 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+25-Mar-2026 08:47:45.416 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+25-Mar-2026 08:47:45.417 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-25.0.2
+25-Mar-2026 08:47:45.418 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           25.0.2+10-LTS-69
+25-Mar-2026 08:47:45.420 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+25-Mar-2026 08:47:45.421 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52
+25-Mar-2026 08:47:45.422 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52
+25-Mar-2026 08:47:45.458 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\conf\logging.properties
+25-Mar-2026 08:47:45.458 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+25-Mar-2026 08:47:45.459 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+25-Mar-2026 08:47:45.459 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+25-Mar-2026 08:47:45.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+25-Mar-2026 08:47:45.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+25-Mar-2026 08:47:45.461 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+25-Mar-2026 08:47:45.461 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+25-Mar-2026 08:47:45.462 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+25-Mar-2026 08:47:45.462 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+25-Mar-2026 08:47:45.463 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+25-Mar-2026 08:47:45.463 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52
+25-Mar-2026 08:47:45.464 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52
+25-Mar-2026 08:47:45.464 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\temp
+25-Mar-2026 08:47:45.493 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-25.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\Python314\Scripts\;C:\Python314\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;D:\bin;D:\Git\cmd;D:\NodeJS\;C:\ProgramData\chocolatey\bin;C:\Program Files\apache-maven-3.9.14\bin;C:\Users\ashwi\AppData\Local\Microsoft\WindowsApps;C:\Users\ashwi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Azure Data Studio\bin;C:\MinGW\bin;C:\Users\ashwi\AppData\Roaming\npm;C:\Users\ashwi\AppData\Local\Android\Sdk\platform-tools;C:\Users\ashwi\AppData\Local\Programs\Antigravity\bin;.]
+25-Mar-2026 08:47:45.652 INFO [Catalina-utility-1] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 8.0.1.Final
+25-Mar-2026 08:47:46.373 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+25-Mar-2026 08:47:46.440 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector["http-nio-8080"]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1084)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:520)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:955)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:709)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:732)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:299)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:472)
+	Caused by: java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:522)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:335)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:297)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:264)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:219)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1431)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1444)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:633)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:82)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1082)
+		... 11 more
+25-Mar-2026 08:47:46.445 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1667] milliseconds
+25-Mar-2026 08:47:46.626 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+25-Mar-2026 08:47:46.627 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.52]
+25-Mar-2026 08:47:46.753 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld.war]
+25-Mar-2026 08:47:49.893 INFO [Catalina-utility-1] org.springframework.web.servlet.FrameworkServlet.initServletBean Completed initialization in 8795 ms
+25-Mar-2026 08:47:49.908 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld.war] has finished in [19,671] ms
+25-Mar-2026 08:47:55.126 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+25-Mar-2026 08:47:56.254 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Initializing Servlet 'dispatcher'
+25-Mar-2026 08:48:00.347 INFO [main] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 8.0.1.Final
+25-Mar-2026 08:48:04.110 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Completed initialization in 7852 ms
+25-Mar-2026 08:48:04.187 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld.war] has finished in [17,420] ms
+25-Mar-2026 08:48:04.190 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\docs]
+25-Mar-2026 08:48:04.385 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\docs] has finished in [194] ms
+25-Mar-2026 08:48:04.388 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\examples]
+25-Mar-2026 08:48:06.599 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\examples] has finished in [2,211] ms
+25-Mar-2026 08:48:06.601 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\host-manager]
+25-Mar-2026 08:48:06.807 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\host-manager] has finished in [207] ms
+25-Mar-2026 08:48:06.808 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\manager]
+25-Mar-2026 08:48:06.982 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\manager] has finished in [174] ms
+25-Mar-2026 08:48:06.984 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\ROOT]
+25-Mar-2026 08:48:07.089 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\ROOT] has finished in [105] ms
+25-Mar-2026 08:48:07.103 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [20650] milliseconds
+25-Mar-2026 08:48:07.127 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:522)
+		at java.base/sun.nio.ch.Net.bind(Net.java:511)
+		at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:641)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:326)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:222)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:531)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:848)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:796)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+25-Mar-2026 08:48:07.129 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+25-Mar-2026 08:48:07.130 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+25-Mar-2026 08:48:07.186 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+25-Mar-2026 08:48:07.189 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]

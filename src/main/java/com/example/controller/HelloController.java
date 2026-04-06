@@ -45,7 +45,7 @@ public class HelloController {
      */
     @GetMapping("/")
     public String home() {
-        return "redirect:/home";
+        return "redirect:/hello";
     }
 
     /**
@@ -65,15 +65,12 @@ public class HelloController {
 
         // Return the view name - ViewResolver will resolve this to /WEB-INF/views/hello.jsp
         return "hello";
-    }
-
+            }
 
     @GetMapping("/home")
     public String index(){
-
         // Return the view name - ViewResolver will resolve this to /WEB-INF/views/hello.jsp
         return "index";
+
     }
 }
-
-

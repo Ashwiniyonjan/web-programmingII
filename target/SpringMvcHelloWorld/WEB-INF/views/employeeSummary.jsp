@@ -1,5 +1,6 @@
-<!--<!DOCTYPE html>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -27,18 +28,8 @@
                 <th>Position</th>
                 <td>${employee.position}</td>
             </tr>
-
-
-             <tr>
-                <th>Address</th>
-                <td>${employee.address}</td>
-            </tr>
-            <tr>
-                <th>Age</th>
-                <td>${employee.age}</td>
-            </tr>
         </table>
-        <a class="back-link" href="${pageContext.request.contextPath}/employee/register">Register Another Employee</a>
+        <a class="back-link" href="${pageContext.request.contextPath}/register">Register Another Employee</a>
     </div>
 </body>
-</html> -->
+</html>

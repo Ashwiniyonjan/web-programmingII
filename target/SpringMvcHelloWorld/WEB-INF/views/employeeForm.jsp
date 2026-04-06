@@ -1,5 +1,6 @@
-<!--<!DOCTYPE html>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,7 +14,7 @@
   <body>
     <div class="card">
       <h1>Employee Registration</h1>
-      <form action="${pageContext.request.contextPath}/employee/register" method="post">
+      <form action="${pageContext.request.contextPath}/register" method="post">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required />
 
@@ -26,14 +27,8 @@
         <label for="position">Position</label>
         <input type="text" id="position" name="position" required />
 
-        <label for="address">Address</label>
-        <input type="text" id="address" name="address" required />
-
-        <label for="age">Age</label>
-        <input type="text" id="age" name="age" required />
-
-        <button type="submit">Register</button>
+        <button type="submit">Submit</button>
       </form>
     </div>
   </body>
-</html>-->
+</html>
