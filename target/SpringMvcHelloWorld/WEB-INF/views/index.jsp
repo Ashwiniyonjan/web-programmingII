@@ -177,19 +177,22 @@
               class="nav-right d-flex gap-3 align-items-center justify-content-center justify-content-lg-end mt-2 mt-lg-0 flex-grow-1"
               style="flex-basis: 0"
             >
+              <!-- REGISTER -->
               <a
-                href="${pageContext.request.contextPath}/user/register"
+                href="${pageContext.request.contextPath}/signup"
                 class="btn btn-outline-primary"
               >
-                <i class="fa-solid fa-user me-1"></i> Register / Login
+                <i class="fa-solid fa-user me-1"></i>
+                Register / Login
               </a>
+
+              <!-- CART -->
               <a href="#" class="btn btn-primary position-relative">
                 <i class="fa-solid fa-cart-shopping"></i>
                 <span
                   class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
                   style="font-size: 0.6em"
                   >0
-                  <span class="visually-hidden">unread messages</span>
                 </span>
               </a>
             </div>

@@ -40,15 +40,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class HelloController {
 
     /**
-     * Handles GET requests to the root URL "/".
-     * Redirects the user to the /hello page.
-     */
-    @GetMapping("/")
-    public String home() {
-        return "redirect:/hello";
-    }
-
-    /**
      * Handles GET requests to "/hello".
      *
      * @param name  optional query parameter (e.g., /hello?name=Abiral)

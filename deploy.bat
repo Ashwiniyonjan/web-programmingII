@@ -7,6 +7,6 @@ if %ERRORLEVEL% neq 0 (
     exit /b 1
 )
 
-copy /Y "target\SpringMvcHelloWorld.war" "C:\Users\ashwi\OneDrive\Documents\SpringMvcHelloWorld1\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld.war"
+copy /Y "target\SpringMvcHelloWorld.war" "C:\Users\ashwi\Downloads\apache-tomcat-10.1.52\webapps\SpringMvcHelloWorld.war"
 
 

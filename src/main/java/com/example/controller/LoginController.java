@@ -1,15 +1,12 @@
 package com.example.controller;
 
+import com.example.dto.UserDTO;
+import com.example.service.UserService;
+import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-
-import com.example.model.User;
-import com.example.service.UserService;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequestMapping("/login")
@@ -18,24 +15,33 @@ public class LoginController {
     @Autowired
     private UserService userService;
 
+    // SHOW LOGIN PAGE
     @GetMapping
     public String showForm() {
-        return "Login";  // /WEB-INF/views/Login.jsp
+        return "Login";
     }
 
+    // HANDLE LOGIN
     @PostMapping
-    public String handleLogin(@RequestParam("email")    String email,
+    public String handleLogin(@RequestParam("email") String email,
                               @RequestParam("password") String password,
+                              HttpSession session,
                               Model model) {
 
-        User user = userService.getUserByEmail(email);
+        UserDTO user = userService.getUserByEmail(email);
 
-        if (user == null || !user.getPassword().equals(password)) {
+        // ❌ INVALID LOGIN
+        if (user == null ||
+            !user.getPassword().equals(userService.hashPassword(password))) {
+
             model.addAttribute("errorMessage", "Invalid email or password.");
             return "Login";
         }
 
-        model.addAttribute("user", user);
-        return "UserSummary";
+        // ✅ STORE USER IN SESSION (VERY IMPORTANT)
+        session.setAttribute("loggedInUser", user);
+
+        // ✅ GO TO EMPLOYEE PAGE
+        return "redirect:/employee";
     }
 }

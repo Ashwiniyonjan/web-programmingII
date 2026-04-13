@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Account — SheWear</title>
+    <title>My Account — ASHH Clothing</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,7 +39,7 @@
 
     <nav class="navbar">
         <div class="container d-flex align-items-center justify-content-between">
-            <a class="navbar-brand" href="${pageContext.request.contextPath}/">SheWear</a>
+            <a class="navbar-brand" href="${pageContext.request.contextPath}/">ASHH Clothing</a>
             <a href="${pageContext.request.contextPath}/" class="btn btn-dark btn-sm">Shop Now</a>
         </div>
     </nav>
@@ -50,7 +50,7 @@
             <div class="success-band">
                 <div class="avatar"><i class="fa-regular fa-user"></i></div>
                 <h1>Welcome, ${user.firstName}!</h1>
-                <p>You are signed in to your SheWear account</p>
+                <p>You are signed in to your account</p>
             </div>
 
             <div class="summary-body">
@@ -83,7 +83,7 @@
         </div>
     </div>
 
-    <footer>&copy; 2024 SheWear.com — All rights reserved.</footer>
+    <footer>&copy; 2024 ASHH Clothing.com — All rights reserved.</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -1,15 +1,14 @@
 package com.example.service;
 
-import java.util.ArrayList;
-import java.util.List;
-
+import com.example.dao.EmployeeDAO;
+import com.example.dto.EmployeeDTO;
+import com.example.model.Employee;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
-import com.example.dao.EmployeeDAO;
-import com.example.dto.EmployeeDTO;
-import com.example.model.Employee;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * The Service layer sits between the Controller and the DAO.

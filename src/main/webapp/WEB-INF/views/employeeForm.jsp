@@ -14,7 +14,7 @@
   <body>
     <div class="card">
       <h1>Employee Registration</h1>
-      <form action="${pageContext.request.contextPath}/register" method="post">
+      <form action="${pageContext.request.contextPath}/employee" method="post">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required />
 
