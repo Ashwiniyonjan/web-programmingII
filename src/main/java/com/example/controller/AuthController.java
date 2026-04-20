@@ -6,23 +6,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * REST API login endpoint.
- *
- * POST /api/auth/login  { "username": "...", "password": "..." }
- *   -> 200 { "token": "<jwt>" } on success
- *   -> 401 { "status": "error", "message": "Invalid credentials" } on failure
- *
- * Authenticates against the users table in the database.
- */
 @RestController
 @RequestMapping("/api/auth")
 public class AuthController {
@@ -37,22 +25,32 @@ public class AuthController {
 
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody Map<String, String> body) {
+
         String username = body.get("username");
         String password = body.get("password");
 
-        if (userService.authenticate(username, password)) {
-            String token = jwtUtil.generateToken(username);
-            logger.info("API login success for user: {}", username);
+        // 🔴 STEP 1: Try authenticate
+        boolean isValid = userService.authenticate(username, password);
+
+        if (!isValid) {
+            logger.warn("Login failed for user: {}", username);
+
             Map<String, Object> response = new HashMap<>();
-            response.put("status", "success");
-            response.put("token", token);
-            return ResponseEntity.ok(response);
+            response.put("status", "error");
+            response.put("message", "Invalid credentials");
+
+            return ResponseEntity.status(401).body(response);
         }
 
-        logger.warn("API login failed for user: {}", username);
+        // 🟢 STEP 2: Generate token
+        String token = jwtUtil.generateToken(username);
+
+        logger.info("Login success for user: {}", username);
+
         Map<String, Object> response = new HashMap<>();
-        response.put("status", "error");
-        response.put("message", "Invalid credentials");
-        return ResponseEntity.status(401).body(response);
+        response.put("status", "success");
+        response.put("token", token);
+
+        return ResponseEntity.ok(response);
     }
 }

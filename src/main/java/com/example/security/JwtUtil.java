@@ -43,9 +43,9 @@ public class JwtUtil {
      */
     public Claims validateToken(String token) throws ExpiredJwtException, JwtException {
         return Jwts.parser()
-                .verifyWith(key)
-                .build()
-                .parseSignedClaims(token)
-                .getPayload();
+            .setSigningKey(key)
+            .build()
+            .parseClaimsJws(token)
+            .getBody();
     }
 }

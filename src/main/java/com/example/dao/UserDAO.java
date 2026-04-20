@@ -1,11 +1,8 @@
 package com.example.dao;
 
 import com.example.dto.UserDTO;
+import java.util.List;
 
-/**
- * Interface defining database operations for user accounts.
- * See AUTHENTICATION_DOCUMENTATION.md for full details.
- */
 public interface UserDAO {
 
     UserDTO save(UserDTO user);
@@ -13,4 +10,7 @@ public interface UserDAO {
     UserDTO findByUsername(String username);
 
     UserDTO findByEmail(String email);
+
+    // ✅ REQUIRED FOR POSTMAN
+    List<UserDTO> getAllUsers();
 }

@@ -15,13 +15,17 @@ public class LoginController {
     @Autowired
     private UserService userService;
 
-    // SHOW LOGIN PAGE
+    // =========================
+    // WEB LOGIN PAGE
+    // =========================
     @GetMapping
     public String showForm() {
         return "Login";
     }
 
-    // HANDLE LOGIN
+    // =========================
+    // WEB LOGIN
+    // =========================
     @PostMapping
     public String handleLogin(@RequestParam("email") String email,
                               @RequestParam("password") String password,
@@ -30,7 +34,6 @@ public class LoginController {
 
         UserDTO user = userService.getUserByEmail(email);
 
-        // ❌ INVALID LOGIN
         if (user == null ||
             !user.getPassword().equals(userService.hashPassword(password))) {
 
@@ -38,10 +41,37 @@ public class LoginController {
             return "Login";
         }
 
-        // ✅ STORE USER IN SESSION (VERY IMPORTANT)
         session.setAttribute("loggedInUser", user);
-
-        // ✅ GO TO EMPLOYEE PAGE
         return "redirect:/employee";
+    }
+
+    // =========================
+    // WEB LOGOUT
+    // =========================
+    @GetMapping("/logout")
+    public String logout(HttpSession session) {
+        session.invalidate();
+        return "redirect:/login";
+    }
+
+    // ======================================================
+    // ================= POSTMAN API ========================
+    // ======================================================
+
+    @PostMapping("/api")
+    @ResponseBody
+    public String loginAPI(@RequestBody UserDTO user) {
+
+        UserDTO dbUser = userService.getUserByEmail(user.getEmail());
+
+        if (dbUser == null) {
+            return "User not found";
+        }
+
+        if (!dbUser.getPassword().equals(userService.hashPassword(user.getPassword()))) {
+            return "Invalid password";
+        }
+
+        return "Login successful";
     }
 }

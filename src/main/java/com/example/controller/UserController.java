@@ -1,10 +1,13 @@
 package com.example.controller;
 
+import com.example.dto.UserDTO;
 import com.example.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @Controller
 public class UserController {
@@ -12,19 +15,25 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    // HOME → SIGNUP PAGE
+    // =========================
+    // WEB: HOME
+    // =========================
     @GetMapping("/")
     public String home() {
         return "redirect:/signup";
     }
 
-    // SHOW SIGNUP PAGE
+    // =========================
+    // WEB: SIGNUP PAGE
+    // =========================
     @GetMapping("/signup")
     public String showSignupForm() {
         return "signup";
     }
 
-    // HANDLE SIGNUP FORM
+    // =========================
+    // WEB: SIGNUP SUBMIT
+    // =========================
     @PostMapping("/signup")
     public String handleSignup(
             @RequestParam("firstName") String firstName,
@@ -41,16 +50,34 @@ public class UserController {
             return "signup";
         }
 
-        try {
-            userService.registerUser(firstName, lastName, email, password, phone);
+        userService.registerUser(firstName, lastName, email, password, phone);
+        return "redirect:/login";
+    }
 
-            // ✅ FIXED FLOW → LOGIN FIRST
-            return "redirect:/login";
+    // ======================================================
+    // ================= POSTMAN APIs =======================
+    // ======================================================
 
-        } catch (Exception e) {
-            e.printStackTrace();
-            model.addAttribute("errorMessage", e.getMessage());
-            return "signup";
-        }
+    // GET ALL USERS (POSTMAN)
+    @GetMapping("/api/users")
+    @ResponseBody
+    public List<UserDTO> getAllUsers() {
+        return userService.getAllUsers();
+    }
+
+    // SIGNUP USER (POSTMAN)
+    @PostMapping("/api/users/signup")
+    @ResponseBody
+    public String signupAPI(@RequestBody UserDTO user) {
+
+        userService.registerUser(
+                user.getFirstName(),
+                user.getLastName(),
+                user.getEmail(),
+                user.getPassword(),
+                user.getPhone()
+        );
+
+        return "User registered successfully";
     }
 }

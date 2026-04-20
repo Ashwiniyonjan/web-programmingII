@@ -2,67 +2,73 @@ package com.example.controller;
 
 import com.example.model.Employee;
 import com.example.service.EmployeeService;
-import com.example.dto.UserDTO;
-import jakarta.servlet.http.HttpSession;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-@Controller
+import java.util.List;
+import java.util.Map;
+
+@RestController
 public class EmployeeController {
 
-    @Autowired
-    private EmployeeService employeeService;
+    private final EmployeeService employeeService;
 
-    // =========================
-    // SHOW EMPLOYEE FORM
-    // =========================
-    @GetMapping("/employee")
-    public String showEmployeeForm(HttpSession session) {
-
-        // ✅ CHECK LOGIN SESSION
-        UserDTO user = (UserDTO) session.getAttribute("loggedInUser");
-
-        if (user == null) {
-            return "redirect:/login";
-        }
-
-        return "employeeForm";
+    public EmployeeController(EmployeeService employeeService) {
+        this.employeeService = employeeService;
     }
 
     // =========================
-    // HANDLE EMPLOYEE FORM SUBMIT
+    // GET ALL EMPLOYEES
     // =========================
-    @PostMapping("/employee")
-    public String registerEmployee(
-            @RequestParam("name") String name,
-            @RequestParam("email") String email,
-            @RequestParam("contactNumber") String contactNumber,
-            @RequestParam("position") String position,
-            HttpSession session,
-            Model model) {
+    @GetMapping("/api/employees")
+    public List<Employee> getAllEmployeesAPI() {
+        return employeeService.getAllEmployees();
+    }
 
-        // ✅ CHECK LOGIN AGAIN (SECURITY)
-        UserDTO user = (UserDTO) session.getAttribute("loggedInUser");
+    // =========================
+    // ADD EMPLOYEE (FIXED FOR CUCUMBER + POSTMAN)
+    // =========================
+    @PostMapping("/api/employees")
+    public ResponseEntity<?> addEmployeeAPI(@RequestBody Employee employee) {
 
-        if (user == null) {
-            return "redirect:/login";
+        // ================= VALIDATION =================
+        if (employee.getName() == null || employee.getName().trim().isEmpty()) {
+            return ResponseEntity.badRequest()
+                    .body(Map.of(
+                            "status", "error",
+                            "errors", Map.of("name", "Name is required")
+                    ));
         }
 
-        try {
-            Employee employee = employeeService.registerEmployee(
-                    name, email, contactNumber, position
-            );
-
-            model.addAttribute("employee", employee);
-
-            // FINAL PAGE
-            return "employeeSummary";
-
-        } catch (Exception e) {
-            model.addAttribute("errorMessage", "Employee registration failed.");
-            return "employeeForm";
+        if (employee.getEmail() == null || !employee.getEmail().contains("@")) {
+            return ResponseEntity.badRequest()
+                    .body(Map.of(
+                            "status", "error",
+                            "errors", Map.of("email", "Invalid email format")
+                    ));
         }
+
+        if (employee.getContactNumber() == null || employee.getContactNumber().length() < 10) {
+            return ResponseEntity.badRequest()
+                    .body(Map.of(
+                            "status", "error",
+                            "errors", Map.of("contactNumber", "Invalid contact number")
+                    ));
+        }
+
+        // ================= SAVE =================
+        Employee saved = employeeService.registerEmployee(
+                employee.getName(),
+                employee.getEmail(),
+                employee.getContactNumber(),
+                employee.getPosition()
+        );
+
+        return ResponseEntity.ok(
+                Map.of(
+                        "status", "success",
+                        "employee", saved
+                )
+        );
     }
 }
