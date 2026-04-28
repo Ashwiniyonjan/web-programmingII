@@ -6,7 +6,7 @@ import io.gatling.javaapi.http.*;
 import static io.gatling.javaapi.core.CoreDsl.*;
 import static io.gatling.javaapi.http.HttpDsl.*;
 
-public class EmployeeFormSimulation extends Simulation {
+public class ProductFormSimulation extends Simulation {
 
     private final HttpProtocolBuilder httpProtocol = http
             .baseUrl("http://localhost:8080/SpringMvcHelloWorld");

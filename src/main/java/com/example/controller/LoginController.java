@@ -8,6 +8,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Map;
+
 @Controller
 @RequestMapping("/login")
 public class LoginController {
@@ -24,7 +26,7 @@ public class LoginController {
     }
 
     // =========================
-    // WEB LOGIN
+    // WEB LOGIN (FORM)
     // =========================
     @PostMapping
     public String handleLogin(@RequestParam("email") String email,
@@ -42,7 +44,7 @@ public class LoginController {
         }
 
         session.setAttribute("loggedInUser", user);
-        return "redirect:/employee";
+        return "redirect:/product/add";
     }
 
     // =========================
@@ -55,23 +57,32 @@ public class LoginController {
     }
 
     // ======================================================
-    // ================= POSTMAN API ========================
+    // POSTMAN / CUCUMBER API LOGIN (FIXED - EMAIL BASED)
     // ======================================================
+    @PostMapping("/api/auth/login")
+@ResponseBody
+public Map<String, String> loginAPI(@RequestBody UserDTO user) {
 
-    @PostMapping("/api")
-    @ResponseBody
-    public String loginAPI(@RequestBody UserDTO user) {
+    UserDTO dbUser = userService.getUserByEmail(user.getEmail());
 
-        UserDTO dbUser = userService.getUserByEmail(user.getEmail());
-
-        if (dbUser == null) {
-            return "User not found";
-        }
-
-        if (!dbUser.getPassword().equals(userService.hashPassword(user.getPassword()))) {
-            return "Invalid password";
-        }
-
-        return "Login successful";
+    if (dbUser == null) {
+        return Map.of(
+                "status", "error",
+                "message", "User not found"
+        );
     }
+
+    //  FIX: HASH PASSWORD BEFORE COMPARING
+    if (!dbUser.getPassword().equals(userService.hashPassword(user.getPassword()))) {
+        return Map.of(
+                "status", "error",
+                "message", "Invalid credentials"
+        );
+    }
+
+    return Map.of(
+            "status", "success",
+            "token", "test-jwt-token"
+    );
+}
 }

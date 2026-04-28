@@ -21,7 +21,7 @@ public class JwtUtil {
 
     // Secret must be at least 256 bits (32 bytes) for HS256.
     private static final String SECRET = "spring-mvc-hello-world-jwt-secret-key-please-change-me-32+chars";
-    private static final long EXPIRATION_MS = 5 * 60 * 1000L; // 5 minutes
+    private static final long EXPIRATION_MS = 24 * 60 * 60 * 1000L; // 24 hours
 
     private final SecretKey key = Keys.hmacShaKeyFor(SECRET.getBytes());
 

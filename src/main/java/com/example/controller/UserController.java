@@ -8,7 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+import java.util.Map; 
 @Controller
 public class UserController {
 
@@ -67,17 +67,27 @@ public class UserController {
 
     // SIGNUP USER (POSTMAN)
     @PostMapping("/api/users/signup")
-    @ResponseBody
-    public String signupAPI(@RequestBody UserDTO user) {
+@ResponseBody
+public Map<String, String> signupAPI(@RequestBody UserDTO user) {
 
-        userService.registerUser(
-                user.getFirstName(),
-                user.getLastName(),
-                user.getEmail(),
-                user.getPassword(),
-                user.getPhone()
+    boolean success = userService.registerUser(
+            user.getFirstName(),
+            user.getLastName(),
+            user.getEmail(),
+            user.getPassword(),
+            user.getPhone()
+    );
+
+    if (!success) {
+        return Map.of(
+                "status", "error",
+                "message", "User already exists"
         );
-
-        return "User registered successfully";
     }
+
+    return Map.of(
+            "status", "success",
+            "message", "User registered successfully"
+    );
+}
 }

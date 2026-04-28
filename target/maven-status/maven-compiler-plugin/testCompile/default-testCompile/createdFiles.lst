@@ -1,4 +1,4 @@
-com\example\gatling\EmployeeFormSimulation.class
+com\example\gatling\ProductFormSimulation.class
+com\example\cucumber\ProductFormStepDefinitions.class
 com\example\cucumber\RunCucumberTest.class
-com\example\cucumber\EmployeeFormStepDefinitions.class
-com\example\model\EmployeeValidationTest.class
+com\example\model\ProductValidationTest.class

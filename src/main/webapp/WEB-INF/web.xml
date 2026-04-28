@@ -18,6 +18,13 @@
 
         <!-- Load this servlet when the server starts (not on first request) -->
         <load-on-startup>1</load-on-startup>
+
+        <!-- Enable multipart support for file uploads -->
+        <multipart-config>
+            <max-file-size>10485760</max-file-size> <!-- 10MB -->
+            <max-request-size>20971520</max-request-size> <!-- 20MB -->
+            <file-size-threshold>0</file-size-threshold>
+        </multipart-config>
     </servlet>
 
     <!-- Map ALL URL patterns to the DispatcherServlet -->

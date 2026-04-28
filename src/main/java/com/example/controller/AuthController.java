@@ -26,14 +26,17 @@ public class AuthController {
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody Map<String, String> body) {
 
-        String username = body.get("username");
+        String loginId = body.get("email");
+        if (loginId == null) {
+            loginId = body.get("username");
+        }
         String password = body.get("password");
 
-        // 🔴 STEP 1: Try authenticate
-        boolean isValid = userService.authenticate(username, password);
+        // STEP 1: Try authenticate
+        boolean isValid = userService.authenticate(loginId, password);
 
         if (!isValid) {
-            logger.warn("Login failed for user: {}", username);
+            logger.warn("Login failed for user: {}", loginId);
 
             Map<String, Object> response = new HashMap<>();
             response.put("status", "error");
@@ -42,10 +45,10 @@ public class AuthController {
             return ResponseEntity.status(401).body(response);
         }
 
-        // 🟢 STEP 2: Generate token
-        String token = jwtUtil.generateToken(username);
+        // STEP 2: Generate token
+        String token = jwtUtil.generateToken(loginId);
 
-        logger.info("Login success for user: {}", username);
+        logger.info("Login success for user: {}", loginId);
 
         Map<String, Object> response = new HashMap<>();
         response.put("status", "success");

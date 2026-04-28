@@ -1,5 +1,6 @@
 package com.example.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -46,22 +47,18 @@ public class HelloController {
      * @param model the Model object to pass data to the View
      * @return the view name "hello" (resolved to /WEB-INF/views/hello.jsp)
      */
+    @Autowired
+    private com.example.service.ProductService productService;
+
     @GetMapping("/hello")
-    public String hello(
-            @RequestParam(value = "name", defaultValue = "World") String name,
-            Model model) {
-
-        // Add the greeting directly as a String attribute to the Model
-        model.addAttribute("greeting", "Hello, " + name + "!");
-
-        // Return the view name - ViewResolver will resolve this to /WEB-INF/views/hello.jsp
-        return "hello";
-            }
+    public String hello(Model model) {
+        return "redirect:/home";
+    }
 
     @GetMapping("/home")
-    public String index(){
-        // Return the view name - ViewResolver will resolve this to /WEB-INF/views/hello.jsp
+    public String index(Model model){
+        model.addAttribute("products", productService.getAllProducts());
         return "index";
-
     }
+
 }

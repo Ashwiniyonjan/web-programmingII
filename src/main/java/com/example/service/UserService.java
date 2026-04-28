@@ -21,28 +21,29 @@ public class UserService {
     // =========================
     // REGISTER USER (UNCHANGED)
     // =========================
-    public boolean registerUser(String firstName, String lastName, String email, String password, String phone) {
+    
+public boolean registerUser(String firstName, String lastName, String email, String password, String phone) {
 
-        String username = firstName + "_" + lastName;
-
-        if (userDAO.findByUsername(username) != null) {
-            return false;
-        }
-
-        String hashedPassword = hashPassword(password);
-
-        UserDTO user = new UserDTO(
-                username,
-                hashedPassword,
-                email,
-                firstName,
-                lastName,
-                phone
-        );
-
-        return userDAO.save(user) != null;
+    // 🔥 CHECK BY EMAIL (NOT username)
+    if (userDAO.findByEmail(email) != null) {
+        return false;
     }
 
+    String username = firstName + "_" + lastName;
+
+    String hashedPassword = hashPassword(password);
+
+    UserDTO user = new UserDTO(
+            username,
+            hashedPassword,
+            email,
+            firstName,
+            lastName,
+            phone
+    );
+
+    return userDAO.save(user) != null;
+}
     // =========================
     // GET USER
     // =========================
@@ -55,13 +56,23 @@ public class UserService {
     }
 
     // =========================
-    // AUTHENTICATION ( FIXED FOR YOUR CASE)
+    // AUTHENTICATION ( FIXED )
     // =========================
-    public boolean authenticate(String username, String password) {
+    public boolean authenticate(String usernameOrEmail, String password) {
+        // Try finding by email first
+        UserDTO user = userDAO.findByEmail(usernameOrEmail);
+        
+        // If not found, try finding by username
+        if (user == null) {
+            user = userDAO.findByUsername(usernameOrEmail);
+        }
 
-        // TEMP FIX FOR ASSIGNMENT / TESTING
-        // bypass DB completely
-        return "admin".equals(username) && "1234789".equals(password);
+        // If user exists, hash the provided password and compare
+        if (user != null) {
+            String hashedInput = hashPassword(password);
+            return user.getPassword().equals(hashedInput);
+        }
+        return false;
     }
 
     // =========================
